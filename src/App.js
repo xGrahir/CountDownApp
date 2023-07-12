@@ -15,8 +15,8 @@ function App() {
   useEffect(() => {
       // Get your data after refresh
       const currentDate = localStorage.getItem('data')
-      let parsedDate = JSON.parse(currentDate)
-      if (currentDate) {
+      if ([currentDate]) {
+        let parsedDate = JSON.parse(currentDate)
         changeCount(parsedDate)
       }
   }, [])
