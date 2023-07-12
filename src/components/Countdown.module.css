@@ -1,0 +1,19 @@
+.info {
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Poppins ExtraBoldItalic';
+}
+
+.text{
+    margin: -1rem 0;
+}
+
+.text span {
+    color: #864cff;
+}
+
+@media (min-width: 768px) {
+    .info {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,113 @@
+.form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+    height: 80px;
+    width: 80px;
+}
+
+.input label {
+    margin-bottom: 0.3rem;
+	font-size: 0.6rem;
+	letter-spacing: 2px;
+	color: gray;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.input input {
+	padding: 10px;
+	width: 4rem;
+	border: 1px solid rgba(128, 128, 128, 0.303);
+	border-radius: 4px;
+	font-size: 0.8rem;
+	font-weight: bold;
+    cursor: pointer;
+}
+
+.input input:focus {
+    outline: none;
+    border: 1px solid #864cff;
+}
+
+.actions {
+	position: relative;
+	margin: 1.5rem 0 3rem 0;
+}
+
+.line {
+	height: 1px;
+	background-color: rgba(128, 128, 128, 0.303);
+}
+
+.btn {
+	position: absolute;
+	top: -1.4rem;
+	left: 50%;
+	transform: translateX(-50%);
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.error label {
+    color: red;
+}
+
+.error input {
+    border: 1px solid red;
+}
+
+.error input:focus {
+    border: 1px solid red;
+}
+
+.error p {
+    color: red;
+    font-size: 0.4rem;
+}
+
+@media (min-width: 768px) {
+
+    .input {
+        width: 140px;
+    }
+
+	.input input {
+        padding: 10px 17px;
+        width: 85%;
+		font-size: 1.5rem;
+	}
+
+	.actions {
+		margin: 2rem 0;
+		width: 120%;
+	}
+
+	.btn {
+		width: 4rem;
+		height: 4rem;
+        top: -1.8rem;
+		right: 0;
+		left: 90%;
+		transform: translateX(0);
+	}
+
+    .error p {
+        font-size: 0.7rem;
+    }
+}
