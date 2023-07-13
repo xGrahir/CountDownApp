@@ -1,1 +1,1 @@
-This is the app that counts how much time has passed since selected date.
+This is the app that counts how much time has passed since selected date. Project made according to frontendmentro.io.
